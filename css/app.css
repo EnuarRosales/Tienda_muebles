@@ -1,0 +1,120 @@
+
+/*con esto no tendremos probema con el padding a esto se  le domina box model*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/* 1REM = 10PX esto es una perrada para poder trabajar con REM ya que esto es lo mas recomendable*/
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;;
+    font-size: 1.6rem;
+    line-height: 2; /*interlineado*/
+}
+
+/* GOLABALES
+SELECTORES GLOVALES ES DECIR APLICA A TODOS LOS SELECTORES QUE SE COLOQUEN */
+
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0; /*elimina todos los maegesnes de los heddings*/
+}
+
+h1 {
+    font-size: 5rem;
+
+}
+h2 {
+    font-size: 4rem;
+
+}
+
+h3 {
+    font-size: 3rem;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+}
+
+img {
+    max-width: 100%;/*perrad se crean imagenes responsibles*/
+    display: block;
+}
+
+/*header y navegacion*/
+
+
+.nombre-sitio {
+    margin-top: 5rem;    
+    text-align: center;/*centra el texto*/
+   
+}
+.nombre-sitio span{
+    color: #037bc0; /*color conbinado del titulo*/
+}
+
+.contenedor-navegacion{
+    border-top: 0.1rem solid #e1e1e1; /*linea hasta loes extremos*/
+}
+
+
+.nav-principal{
+    /*border-top: 1px solid #e1e1e1;/*manera resumida*/
+    /*margin: 20px 0;*/ /*manera resumida*/
+    padding: 2rem 0;
+    display: flex; /*ojo que para aplicar esta propiedad se le tiene que realizar al pdre directo es decir e
+    estamps tratando de destrobuir los enlaces es por esto que se le realiza a .nav-principal*/
+    justify-content: space-around;
+}
+
+.hero{
+    background-image: url(../img/principal.jpg);/*imagen relativa la poscioon del archivo es decir toca salir i entrar*/
+    background-repeat: no-repeat;/*con esto no repetimos la imgane ya que pord defecto lo hace*/
+    background-size: cover; /*alarga la imagen a lo ancho de la pantalla*/
+    background-position: center center;
+    height: 55rem;
+}
+
+/*CATEGORIAS*/
+.categorias {
+    padding-top: 5rem;/*SEPARACION ENTRE*/
+}
+
+.categorias h2{
+    text-align: center;
+
+}
+
+.categorias a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;/*tamaño de letra*/   
+}
+
+.categorias a:hover{ /*color de botones*/
+    background-color: #037bc0;
+    color: #ffff;
+    border-bottom-right-radius: 1rem;
+}
+
+.listado-categorias{
+    display: grid;/*bastante pioderoso para los grid es decir distribuirlos en pantalla*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;/*separacion entre imagenes*/
+}
+
+
+
+
+
+

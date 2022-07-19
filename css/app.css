@@ -50,6 +50,26 @@ img {
     display: block;
 }
 
+.btn{
+    background-color: #8cbc00;
+    display: block; /*nos da todo el ancho disponible*/
+    color: #ffff;
+    text-transform: uppercase;/*trasnforma el texto en mayusculas*/
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;/*transicion de colores recibe tres parametros*/
+
+}
+
+.btn:hover{
+    background-color: #8cbc00;
+}
+
+/*utilidades*/ 
+.text-center{
+    text-align: center;
+}
+
 /*header y navegacion*/
 
 
@@ -134,6 +154,31 @@ background-size: 100%, 120rem;
     
 }
 
+/*listado de productos*/
 
+.contenido-principal{
+    padding-top: 5rem;
+}
+.producto{
+    background-color: #037bc0;
+}
 
+.text-producto{
+    text-align: center;
+    color: #ffff;
+    padding: 2rem;
+
+}
+
+.text-producto h3{
+    margin: 0;    
+}
+.text-producto p{
+    margin: 0 0 .5rem 0;    
+}
+
+.text-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
 

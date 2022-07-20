@@ -62,7 +62,7 @@ img {
 }
 
 .btn:hover{
-    background-color: #8cbc00;
+    background-color: #658504;
 }
 
 /*utilidades*/ 
@@ -159,6 +159,80 @@ background-size: 100%, 120rem;
 .contenido-principal{
     padding-top: 5rem;
 }
+
+/*aca se hace el GRID*/
+.listado-productos{
+
+   display: grid; /*se crea el grid*/
+   grid-template-columns: repeat(6, 1fr);/*aca se se crean 5 columnas con el mismo tamaño ojo siembre va haber una linea de mas a la que hayas definido*/
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.producto:nth-child(1){ /*muy util aca seleccionamos la primer imagen*/
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;/* posicionan mejor la primer imagen*/ 
+
+}
+
+/*bastante importante quita espacios y proporciona el espacio correcto de la imagen */
+.producto:nth-child(1) img{
+    height: 43rem;
+    width: 100%;/*ojo aca la altura la que se quiera pero el ancho debe de ser del 100%*/
+    object-fit: cover;
+}
+
+
+/*continuamos poscisionando las imagenes en el GRID  seleccionamos la imagne 2 y le decimo que vaya desde la poscicion 1 a la posicion 4*/
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4; 
+}
+.producto:nth-child(2) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7; 
+}
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+.producto:nth-child(4) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5; 
+}
+.producto:nth-child(5) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7; 
+}.producto:nth-child(6) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 .producto{
     background-color: #037bc0;
 }
@@ -180,5 +254,32 @@ background-size: 100%, 120rem;
 .text-producto .precio {
     font-size: 2.8rem;
     font-weight: 900;
+}
+
+/*footer*/
+
+.site-footer{
+    border-top: 0.1rem solid #e1e1e1; 
+    margin: 5rem;
+    padding: 5rem;
+
+}
+.site-footer h3{
+    margin-bottom: 2rem;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.footer-menu a{    
+    display: block; /*cada enlace tomara el total del ancho disponible*/
+}
+
+.derechos{
+    text-align: center;
+    margin-top: 7rem;
 }
 

@@ -58,7 +58,7 @@ img {
     font-weight: 900;
     padding: 1rem;
     transition: background-color .3s ease-out;/*transicion de colores recibe tres parametros*/
-
+    text-align: center;
 }
 
 .btn:hover{
@@ -68,6 +68,10 @@ img {
 /*utilidades*/ 
 .text-center{
     text-align: center;
+}
+
+.max-width-30{
+    max-width: 30rem;
 }
 
 /*header y navegacion*/
@@ -283,3 +287,53 @@ background-size: 100%, 120rem;
     margin-top: 7rem;
 }
 
+
+/*nosotros*/
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 4rem;    
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));/**con sta liena volvemos responsive el sitio cuadndo llegue al tamaño de 25rem esta se descuelga*/
+    
+
+}
+
+.informacion-nosotros{
+    display: flex; /*cuando creamo esto podemos acceder a sus propiedades*/
+    flex-direction: column;/*las cualoes son estas*/
+    justify-content: center;
+
+    
+}
+
+/*blog*/
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem; /*4rem en todlos los lados*/
+}
+
+.entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{/*con esra lo que hace es irce hasta la ultima entrada y aplicar los siguientes cambios*/
+border: none; /*para que no nos maque el borde que se miraba feo*/
+}
+
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;/*coloca a los extremos*/
+    
+}
+.entrada-meta p{
+    font-weight: bold;/*ojo dependiendo de la fuente que hayamos sleccionado negrita*/
+
+}
+
+.entrada-meta span{
+
+    color: #037bc0;
+}

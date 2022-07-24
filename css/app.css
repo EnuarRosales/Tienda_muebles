@@ -337,3 +337,25 @@ border: none; /*para que no nos maque el borde que se miraba feo*/
 
     color: #037bc0;
 }
+
+ /*entraa blog*/
+
+ .contenido-entrada-blog{
+    width: 60rem;
+   margin: 0 auto;
+ }
+
+ /*galeria*/
+ .galeria{
+    list-style: none;/*quitar puntyo*/
+    padding: 0;
+    margin: 0;/*quitamos padding y marggin para quedarnos solo con las imagenes*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /*margen en todos los lados*/
+}
+.galeria img{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;/*estp es magico las distribuye sin importar o ajustado su tamaño*/
+}

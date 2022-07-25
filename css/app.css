@@ -59,10 +59,12 @@ img {
     padding: 1rem;
     transition: background-color .3s ease-out;/*transicion de colores recibe tres parametros*/
     text-align: center;
+    border: none;
 }
 
 .btn:hover{
     background-color: #658504;
+    cursor: pointer;
 }
 
 /*utilidades*/ 
@@ -359,3 +361,44 @@ border: none; /*para que no nos maque el borde que se miraba feo*/
     width: 40rem;
     object-fit: cover;/*estp es magico las distribuye sin importar o ajustado su tamaño*/
 }
+
+/*formulario*/
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+.formulario legend {
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+}
+
+.campo{
+    display: flex;/*alienamos de derecha a izquierda*/
+    margin-bottom: 2rem; /*espacio hacia abajo*/
+
+}
+
+.campo label{
+    flex-basis: 10rem;/*obligamos a que sea 10 ojo es un propiedad de flex*/
+}
+/*ojo que  se le aplico a todo con la condicion not */
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+
